@@ -11,7 +11,7 @@ int echo = 12;
 int trig = 13;
 long duration;
 
-Servo myServo;
+
 
 void setup() {
   pinMode(3, OUTPUT);
@@ -22,11 +22,8 @@ void setup() {
   pinMode(m2p2, OUTPUT);
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
-
   myServo.attach(11);
-  myServo.write(90);
 }
-
 
 
 void loop() {
@@ -38,4 +35,3 @@ void loop() {
   }
   delay(100);
 }
-
