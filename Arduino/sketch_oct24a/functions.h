@@ -11,15 +11,19 @@ extern int ena2;
 extern int echo;
 extern int trig;
 extern long duration;
-
+extern int rightDistance;
+extern int leftDistance;
+extern int cm;
+extern int stopedDist;
 extern Servo myServo;
 
+void checkDist();
 int dist(); 
 void stop();
 void forward();
 void reverse();
 void turnRight();
 void turnLeft();
-void servoRight();
-void servoLeft();
+int servoRight();
+int servoLeft();
 #endif
